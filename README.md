@@ -25,19 +25,19 @@ to /login
 3. GET /login renders a form where users can log into an existing account,
 triggers POST /login on sumbit
 4. POST /login verifies user information then redirects to /user/:id
-5. GET /user/:id returns the name, email, and club rank of the user id
+5. GET /user/:id sends a json of the name, email, and club rank of the user id
 specified, NOT the password
 6. GET /clubs sends a json of all the clubs in the database
 7. POST /clubs creates a new club and saves it in the database
-8. GET /rankings sends Jennifer's ranking of all clubs
+8. GET /rankings sends a json of Jennifer's ranking of all clubs in order
 9. POST /rankings updates Jennifer's ranking of the clubs, taking in the new
 order of clubs in an array in the request body
 10. **My Feature** GET /clubs/ranked sends a json of all the clubs in the
 database with (and sorted by) their average ranking between all users in the
-database.
+database
 
 ### Forms
-I implemented two forms, login and signup, using Bootstrap and rendered with
+I built two html forms, login and signup, using Bootstrap and rendered with
 express-handlebars.
 
 ### Next steps
@@ -50,4 +50,4 @@ would be separate rankings based on things like time commitment, community,
 development, etc.; links to club website/applications (or some kind of common
 app for clubs - would make life a lot easier); a recommendation system based on
 the user's club rankings or even their major/classes, if the information is
-accessible. 
+accessible.
