@@ -1,4 +1,10 @@
 # Penn Server Challenge: Eva Killenberg
+## Installation
+1. Clone repo
+2. Create env.sh file with info given
+3. `$ source env.sh`
+4. `$ npm install`
+5. `$ node server.js`
 
 ## Features
 ### Data
