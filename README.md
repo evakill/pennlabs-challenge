@@ -1,7 +1,7 @@
 # Penn Server Challenge: Eva Killenberg
 
-##Features
-###Data
+## Features
+### Data
 I decided to store user and club data in MongoDB, as it is the database I am the
 most familiar with. I defined the User and Club models in the models.js file.
 The database currently has the 6 clubs in the club_list.json file and the user
@@ -11,7 +11,7 @@ ranking of the clubs is stored as an array of reference objects in the order
 she prefers them. For Jennifer, this is the order given, but for the others it
 is random.
 
-###Routes
+### Routes
 1. GET /signup renders a form where users can create an account, triggers
 POST /newuser on submit
 2. POST /newuser creates a new user and saves it in the database, then redirects
@@ -28,4 +28,4 @@ specified, NOT the password
 order of clubs in an array in the request body
 10. **My Feature** GET /clubs/ranked sends a json of all the clubs in the
 database with (and sorted by) their average ranking between all users in the
-database. 
+database.
