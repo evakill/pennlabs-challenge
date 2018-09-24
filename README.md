@@ -35,3 +35,19 @@ order of clubs in an array in the request body
 10. **My Feature** GET /clubs/ranked sends a json of all the clubs in the
 database with (and sorted by) their average ranking between all users in the
 database.
+
+### Forms
+I implemented two forms, login and signup, using Bootstrap and rendered with
+express-handlebars.
+
+### Next steps
+If I had additional time I would implement Passport.js to authenticate users
+and store user sessions once logged in in order to access their own rankings
+(rather than hard-coding Jennifer's in the ranking routes). I think this would
+complete the current functionality, besides the front-end.
+Other functionality I believe would be useful in a product like Penn Club Review
+would be separate rankings based on things like time commitment, community,
+development, etc.; links to club website/applications (or some kind of common
+app for clubs - would make life a lot easier); a recommendation system based on
+the user's club rankings or even their major/classes, if the information is
+accessible. 
