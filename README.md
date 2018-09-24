@@ -4,7 +4,7 @@
 2. Create env.sh file with info given
 3. `$ source env.sh`
 4. `$ npm install`
-5. `$ node server.js`
+5. `$ node index.js`
 
 ## Features
 ### Data
@@ -12,7 +12,7 @@ I decided to store user and club data in MongoDB, as it is the database I am the
 most familiar with. I defined the User and Club models in the models.js file.
 The database currently has the 6 clubs in the club_list.json file and the user
 'Jennifer' along with some others for testing purposes. User objects' passwords
-are hashed using the npm package bcrypt, for security purposes. The user's  
+are hashed using the npm package bcrypt, for security purposes. The user's
 ranking of the clubs is stored as an array of reference objects in the order
 she prefers them. For Jennifer, this is the order given, but for the others it
 is random.
